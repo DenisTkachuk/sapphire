@@ -7,7 +7,76 @@ $icon-font-path: '../fonts/';
 @import "parts/settings";
 @import "parts/typografics";
 
-
-
+header {
+  padding-bottom: 15px;
+  .phone {
+    font-family: $titleFontBold;
+    font-size: 18px;
+    color: #000;
+    transition: .3s;
+    text-decoration: none;
+    line-height: 28px;
+    margin-top: 4px;
+    display: block;
+    i {
+      margin-right: 5px;
+    }
+    &:hover {
+      color: #8b5a23;
+    }
+  }
+  .header-address {
+    color: #8b5a23;
+    margin-bottom: 0;
+  }
+  .social {
+    margin-top: 10px;
+    li {
+      margin-left: 15px;
+      a {
+        color: #281a0d;
+        width: 40px;
+        line-height: 40px;
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        transition: .3s;
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 7px;
+          left: 20px;
+          background: transparent;
+          border: 1px solid #281a0d;
+          /* Rotate */
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          /* Rotate Origin */
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          transition: .3s;
+          z-index: -1;
+        }
+        &:hover {
+          color: #fff;
+          i {color: #fff;}
+          &::before {
+            background: #281a0d;
+          }
+        }
+      }
+    }
+  }
+}
 
 @import "parts/sidebar";

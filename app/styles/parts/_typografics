@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Constantia-bold';
+  src: url('../fonts/Constantia-Bold.eot');
+  src: url('../fonts/Constantia-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Constantia-Bold.woff2') format('woff2'),
+  url('../fonts/Constantia-Bold.woff') format('woff'),
+  url('../fonts/Constantia-Bold.ttf') format('truetype'),
+  url('../fonts/Constantia-Bold.svg#Constantia-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Constantia';
+  src: url('../fonts/Constantia.eot');
+  src: url('../fonts/Constantia.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Constantia.woff2') format('woff2'),
+  url('../fonts/Constantia.woff') format('woff'),
+  url('../fonts/Constantia.ttf') format('truetype'),
+  url('../fonts/Constantia.svg#Constantia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Effra-semibold';
+  src: url('../fonts/Effra-Medium.eot');
+  src: url('../fonts/Effra-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Effra-Medium.woff2') format('woff2'),
+  url('../fonts/Effra-Medium.woff') format('woff'),
+  url('../fonts/Effra-Medium.ttf') format('truetype'),
+  url('../fonts/Effra-Medium.svg#Effra-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Effra';
+  src: url('../fonts/Effra-Regular.eot');
+  src: url('../fonts/Effra-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Effra-Regular.woff2') format('woff2'),
+  url('../fonts/Effra-Regular.woff') format('woff'),
+  url('../fonts/Effra-Regular.ttf') format('truetype'),
+  url('../fonts/Effra-Regular.svg#Effra-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Effra-bold';
+  src: url('../fonts/Effra-Bold.eot');
+  src: url('../fonts/Effra-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Effra-Bold.woff2') format('woff2'),
+  url('../fonts/Effra-Bold.woff') format('woff'),
+  url('../fonts/Effra-Bold.ttf') format('truetype'),
+  url('../fonts/Effra-Bold.svg#Effra-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$baseFont: "Constantia", serif !default;
+$baseFontBold: "Constantia-bold", serif !default;
+$titleFont: "Effra", sans-serif !default;
+$titleFontSemi: "Effra-semibold", sans-serif !default;
+$titleFontBold: "Effra-bold", sans-serif !default;
+
+
+
+body {
+  font-family: $baseFont;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $titleFontBold;
+}

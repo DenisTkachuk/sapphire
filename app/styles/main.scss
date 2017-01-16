@@ -4,8 +4,11 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
+
 @import "parts/settings";
 @import "parts/typografics";
+
+@import "parts/sidebar";
 
 header {
   padding-bottom: 15px;
@@ -78,5 +81,3 @@ header {
     }
   }
 }
-
-@import "parts/sidebar";

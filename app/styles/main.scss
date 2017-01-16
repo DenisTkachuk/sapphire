@@ -52,8 +52,8 @@ header {
           position: absolute;
           width: 40px;
           height: 40px;
-          top: 7px;
-          left: 20px;
+          top: 8px;
+          left: 21px;
           background: transparent;
           border: 1px solid #281a0d;
           /* Rotate */
@@ -86,16 +86,45 @@ header {
 // about
 .about {
   padding: 70px 0;
+  .title {
+    margin-top: 0;
+  }
 }
 
 // about chef
 .chef {
   padding: 75px 0 105px;
+  .title {
+    margin-top: 45px;
+  }
 }
 
 // footer
 footer {
   background: #f7f7f7;
   color: #747474;
-  padding: 20px 0;
+  padding: 50px 0;
+  .copy {
+    color: #8b5a23;
+    font-family: $titleFont;
+  }
+  .made-by {
+    line-height: 66px;
+    text-align: right;
+    span {
+      margin-right: 15px;
+      font-size: 16px;
+      font-family: $titleFont;
+      text-transform: lowercase;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: #747474;
+    &:hover {
+      color: #8b5a23;
+    }
+  }
 }

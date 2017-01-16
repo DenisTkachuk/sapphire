@@ -13,7 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/bower_components/magnific-popup/dist/magnific-popup.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -153,6 +153,24 @@
         </div>
         <!-- end section about -->
 
+        <!-- carousel -->
+        <div class="carousel slick-list">
+          <a href="//satyr.io/1280x720/1"><img src="//satyr.io/195x137/1" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/2"><img src="//satyr.io/195x137/2" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/3"><img src="//satyr.io/195x137/3" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/4"><img src="//satyr.io/195x137/4" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/5"><img src="//satyr.io/195x137/5" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/6"><img src="//satyr.io/195x137/6" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/7"><img src="//satyr.io/195x137/7" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/8"><img src="//satyr.io/195x137/8" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/9"><img src="//satyr.io/195x137/9" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/10"><img src="//satyr.io/195x137/10" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/11"><img src="//satyr.io/195x137/11" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/12"><img src="//satyr.io/195x137/12" width="195" height="137" alt="1" /></a>
+          <a href="//satyr.io/1280x720/13"><img src="//satyr.io/195x137/13" width="195" height="137" alt="1" /></a>
+        </div>
+        <!-- end carousel -->
+
         <!-- текст і картинка про шефа -->
         <div class="chef clear">
           <div class="container-fluid">
@@ -211,6 +229,7 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -233,24 +252,5 @@
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
-    <script>
-      $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
-    </script>
-    <script>
-      $(".slider").slick({
-        infinite: true,
-        dots: true,
-        lazyLoad: 'progressive',
-        autoplaySpeed: 5000,
-        autoplay: true,
-        fade: true,
-        cssEase: 'linear',
-        arrows: false,
-        speed: 500
-      });
-    </script>
   </body>
 </html>

@@ -7,7 +7,7 @@ $icon-font-path: '../fonts/';
 
 @import "parts/settings";
 @import "parts/typografics";
-
+@import "parts/slick-themes";
 @import "parts/sidebar";
 
 // header
@@ -169,6 +169,65 @@ header {
     margin-top: 0;
   }
 }
+
+// slick carousel
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: rgba(255,255,255,.8);
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+  z-index: 10;
+  &:hover, &:focus {
+    outline: none;
+    background: #fff;
+    color: transparent;
+    &:before {
+      color: #281a0d;
+    }
+  }
+  &.slick-disabled:before {
+    opacity: 0.5;
+  }
+  &:before {
+    font-family: FontAwesome;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgba(#281a0d, .8);
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.slick-prev {
+  left: 20px;
+  &:before {
+    content: '\f104';
+  }
+}
+
+.slick-next {
+  right: 20px;
+  &:before {
+    content: '\f105';
+  }
+}
+
 
 // about chef
 .chef {

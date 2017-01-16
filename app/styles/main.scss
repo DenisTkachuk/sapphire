@@ -128,6 +128,16 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
+    // цей кусок коду для накладання поверх картинок чорного фону з прозорістю в 60%
+    // щоб бувчитабельний текст на світлих картинках і тд
+    // у разі потреби розкоментувати
+    //&::before {
+    //  position: absolute;
+    //  width: 100%;
+    //  height: 100%;
+    //  content: '';
+    //  background: rgba(0,0,0,.6);
+    //}
     .slide-content {
       max-width: 560px;
       color: #fff;

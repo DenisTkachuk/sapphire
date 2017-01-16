@@ -10,6 +10,7 @@ $icon-font-path: '../fonts/';
 
 @import "parts/sidebar";
 
+// header
 header {
   padding-bottom: 15px;
   .phone {
@@ -80,4 +81,21 @@ header {
       }
     }
   }
+}
+
+// about
+.about {
+  padding: 70px 0;
+}
+
+// about chef
+.chef {
+  padding: 75px 0 105px;
+}
+
+// footer
+footer {
+  background: #f7f7f7;
+  color: #747474;
+  padding: 20px 0;
 }

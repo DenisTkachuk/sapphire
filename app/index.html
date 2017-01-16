@@ -13,6 +13,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -96,15 +97,41 @@
         <!--end header-->
 
         <!-- slider section -->
-        <div class="slider">
-          <div class="slick-slide">
-            <img src="http://lorempixel.com/1920/400/sports/">
+        <div class="main-slider slider">
+          <!--slider item -->
+          <div class="slick-slide" style="background-image: url('images/slide-1.jpg');">
+            <div class="slide-content">
+              <h2 class="slide-title">
+                Бeнкетний зал та<br>вишукана кухня
+              </h2>
+              <p class="slide-descripttion">
+                Стильний інтерєр, вишукана різноманітна кухня, ексклюзивні кальяни, привітний персонал та жива музика.
+              </p>
+            </div>
           </div>
-          <div class="slick-slide">
-            <img src="http://lorempixel.com/1920/400/city/">
+
+          <!--slider item -->
+          <div class="slick-slide" style="background-image: url('//lorempixel.com/1920/400/city/')">
+            <div class="slide-content">
+              <h2 class="slide-title">
+                Бeнкетний зал та<br>вишукана кухня
+              </h2>
+              <p class="slide-descripttion">
+                Стильний інтерєр, вишукана різноманітна кухня, ексклюзивні кальяни, привітний персонал та жива музика.
+              </p>
+            </div>
           </div>
-          <div class="slick-slide">
-            <img src="http://lorempixel.com/1920/400/food/">
+
+          <!--slider item -->
+          <div class="slick-slide" style="background-image: url('//lorempixel.com/1920/400/food/');">
+            <div class="slide-content">
+              <h2 class="slide-title">
+                Бeнкетний зал та<br>вишукана кухня
+              </h2>
+              <p class="slide-descripttion">
+                Стильний інтерєр, вишукана різноманітна кухня, ексклюзивні кальяни, привітний персонал та жива музика.
+              </p>
+            </div>
           </div>
         </div>
         <!-- end slider -->
@@ -214,33 +241,15 @@
     </script>
     <script>
       $(".slider").slick({
-
-        // normal options...
-        infinite: false,
-
-        // the magic
-        responsive: [{
-
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            infinite: true
-          }
-
-        }, {
-
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            dots: true
-          }
-
-        }, {
-
-          breakpoint: 300,
-          settings: "unslick" // destroys slick
-
-        }]
+        infinite: true,
+        dots: true,
+        lazyLoad: 'progressive',
+        autoplaySpeed: 5000,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+        arrows: false,
+        speed: 500
       });
     </script>
   </body>

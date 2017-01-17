@@ -1,0 +1,41 @@
+// min-width
+@media all and (min-width: 1201px) {
+
+}
+
+// max-width
+@media all and (max-width: 1200px) {
+
+}
+@media all and (max-width: 992px) {
+  .about {
+    .title {
+      margin-top: 20px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  header {
+    .row {
+      .col-md-6 {
+        text-align: center;
+        .header-address {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .main-slider.slick-slider {
+      .slick-slide {
+        .slide-content {
+          width: 88%;
+          max-width: 100%;
+          -webkit-transform: translate(6%, -50%);
+          transform: translate(6%, -50%);
+        }
+      }
+  }
+}
+@media all and (max-width: 480px) {
+
+}

@@ -168,6 +168,11 @@ header {
   .title {
     margin-top: 0;
   }
+  .col-md-6 {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // slick carousel
@@ -231,9 +236,9 @@ header {
 
 // about chef
 .chef {
-  padding: 75px 0 105px;
+  padding: 75px 0 70px;
   .title {
-    margin-top: 45px;
+    margin-top: 20px;
   }
 }
 

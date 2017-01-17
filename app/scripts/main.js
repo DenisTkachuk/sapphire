@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  $("#menu-toggle").click(function(e) {
+  $('#menu-toggle').click(function(e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
+    $('#wrapper').toggleClass('toggled');
   });
 
-  $(".slider").slick({
+  $('.slider').slick({
     infinite: true,
     dots: true,
     lazyLoad: 'progressive',
